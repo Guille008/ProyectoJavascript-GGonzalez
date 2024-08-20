@@ -1,20 +1,15 @@
 let total = 0;
 const envio = 2000;
-// const menuPequeño = "1:Combo pequeño";
-// const menuMediano = "2:Combo mediano";
-// const menuGrande = "3:Combo grande";
-// const precioPequeño = 5000;
-// const precioMediano = 6500;
-// const precioGrande = 8000;
-
 function Combos (nombre,precio){
-    this.nombre = nombre;
+    this.nombre = nombre.toUpperCase();
     this.precio = precio;
 }
 
 const comboPequeño = new Combos("1: Combo Pequeño",5000);
-const comboMediano = new Combos("2:Combo Mediano",6500);
+const comboMediano = new Combos("2: Combo Mediano",6500);
 const ComboGrande = new Combos("3: Combo Grande",8000);
+const menus =[];
+menus.push(comboPequeño,comboMediano,ComboGrande);
 
 let seleccion = 0;
 let nombre = "Nombre";
@@ -22,11 +17,11 @@ let apellido = "Apellido";
 let direccion = "0";
 let delivery = "no";
 
-// alert("Bienvenido a RG burgers");
-// nombre = prompt("Ingurese su nombre");
-// apellido = prompt("Ingrese su apellido");
-// alert("Nos alegra tenerte por aqui"+" "+nombre);
-// alert("Estas son nuestas opciones de menu que tenemos para vos"+"\n"+menuPequeño+"\n"+menuMediano+"\n"+menuGrande);
+alert("Bienvenido a RG burgers");
+nombre = prompt("Ingurese su nombre");
+apellido = prompt("Ingrese su apellido");
+alert("Nos alegra tenerte por aqui"+" "+nombre);
+alert("Estas son nuestas opciones de menu que tenemos para vos"+"\n"+comboPequeño.nombre+" $"+comboPequeño.precio+"\n"+comboMediano.nombre+" $"+comboMediano.precio+"\n"+ComboGrande.nombre+" $"+ComboGrande.precio);
 seleccion = parseInt(prompt("Ingresa el numero de la opcion elegida"));
 
 if (seleccion == 1){
