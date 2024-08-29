@@ -1,0 +1,44 @@
+* {
+    margin: 5px;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+background-color: black;
+color:white ;
+}
+
+h1{
+    text-align: center;
+    margin-top: 1.2rem;
+}
+.formularioIndex{
+    text-align: center;
+}
+footer {
+    background-color: #bea9a9;
+    position: sticky;
+    bottom: 0;
+}
+
+footer p {
+    background-color: #c2c2c2;
+    color: black;
+    text-align: center;
+    font-size: small;
+}
+
+.bottonGenerico {
+    background-color: #c72020;
+    height: 2rem;
+    padding: .25rem;
+    border-radius: .25rem;
+    border: none;
+    margin: .25rem;
+}
+
+.bottonGenerico:hover {
+    background-color: #960a0a;
+    border: 1px solid #c2c2c2;
+}

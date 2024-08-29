@@ -1,15 +1,45 @@
-<!DOCTYPE html>
-<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Java</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>Primer preentrega</h1>
-    <h2>Guillermo Gonzalez</h2>
-<footer>
-</footer>
-<script src="javaScrip/index.js"></script>
+    <header id="header">
+    </header>
+
+    <main id="main">
+        <h1>Bienvenido a RG Burger</h1>
+        <div class="formularioIndex">
+            <form id="formulario">
+                <input type="text" placeholder="Ingrese Nombre">
+                <input type="text" placeholder="Ingrese Apellido">
+                <select name="Delivery" id="Delivery">
+                    <option disabled selected> Envio a domicilio?</option>
+                    <option value="Si">Si</option>
+                    <option value="No">No</option>
+                </select>
+                <article>
+                    <label>Opcional Delivery</label>
+                    <input type="text" placeholder="Ingrese direccion">
+                </article>
+                <div>
+                    <input class="bottonGenerico" id="botonPequeño" type="button" value="Combo pequeño">
+                    <input class="bottonGenerico" id="botonMediano" type="button" value="Combo mediano">
+                    <input class="bottonGenerico" id="botonGrande" type="button" value="Combo grande">
+                </div>
+                <input type="submit" value="Confirmar pedido" class="bottonGenerico">
+                <button class="bottonGenerico" id="Cancelar">
+                    Borrar pedido
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Guillermo Gonzalez preentrega 3 -<span id="horaActual"></span></p>
+    </footer>
+    <script src="javaScrip/index1.js"></script>
 </body>
 </html>

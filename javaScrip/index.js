@@ -12,14 +12,14 @@ const menus =[];
 menus.push(comboPequeño,comboMediano,ComboGrande);
 
 let seleccion = 0;
-let nombre = "Nombre";
-let apellido = "Apellido";
+// let nombre = "Nombre";
+// let apellido = "Apellido";
 let direccion = "0";
 let delivery = "no";
 
-alert("Bienvenido a RG burgers");
-nombre = prompt("Ingurese su nombre");
-apellido = prompt("Ingrese su apellido");
+console.log("Bienvenido a RG burgers");
+let nombre = prompt("Ingurese su nombre");
+let apellido = prompt("Ingrese su apellido");
 alert("Nos alegra tenerte por aqui"+" "+nombre);
 alert("Estas son nuestas opciones de menu que tenemos para vos"+"\n"+comboPequeño.nombre+" $"+comboPequeño.precio+"\n"+comboMediano.nombre+" $"+comboMediano.precio+"\n"+ComboGrande.nombre+" $"+ComboGrande.precio);
 seleccion = parseInt(prompt("Ingresa el numero de la opcion elegida"));
