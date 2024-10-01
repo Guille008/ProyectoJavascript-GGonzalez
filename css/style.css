@@ -5,7 +5,7 @@
 }
 
 body{
-background-color: black;
+background-color: rgb(138, 17, 17);
 color:white ;
 }
 
@@ -36,9 +36,21 @@ footer p {
     border-radius: .25rem;
     border: none;
     margin: .25rem;
+    text-decoration: none;
+    color: black;
 }
 
 .bottonGenerico:hover {
     background-color: #960a0a;
     border: 1px solid #c2c2c2;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap; /* Esto permite que las tarjetas se ajusten a múltiples filas si no caben en una sola */
+    justify-content: space-around; /* Ajusta la alineación horizontal */
+}
+
+.card {
+    margin: 10px; /* Esto añade espacio entre las tarjetas */
 }

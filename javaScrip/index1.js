@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// Agregado final
+// Agregado de hora
 
 function actualizarHora() {
     const ahora = new Date();
